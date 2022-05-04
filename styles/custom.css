@@ -1,0 +1,26 @@
+.notion-frame {
+  @apply bg-slate-100 dark:bg-black;
+}
+.notion-collection-card {
+  @apply bg-white dark:bg-slate-800 shadow-md hover:bg-white hover:shadow-lg focus:shadow-xl transition-all ease-in-out duration-500;
+}
+
+.notion-link {
+  @apply transition-all ease-in-out duration-300;
+}
+
+.notion-callout-text {
+  @apply overflow-clip;
+}
+
+.notion-header {
+  @apply h-24 sm:h-12 bg-slate-100;
+}
+
+.notion-header .notion-nav-header {
+  @apply flex-wrap gap-0 sm:flex-nowrap;
+}
+
+.notion-header .breadcrumbs {
+  @apply h-12 justify-around w-full sm:w-auto;
+}
