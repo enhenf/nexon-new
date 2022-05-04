@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --base-font-family: Roboto Slab, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Helvetica, Arial, pingfang sc, source han sans sc, noto sans cjk sc,
+    sarasa gothic sc, microsoft yahei, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji;
+  --title-font-family: noto sans, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Helvetica, Arial, Source Han Sans SC, Noto Sans CJK SC, Sarasa Gothic SC,
+    Microsoft YaHei, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  --monospace-font-family: Fira Code, SF Mono, Consolas, Monaco, Ubuntu Mono,
+    monospace;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 100vh;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /*background: #edf2f7;*/
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border: 3px solid #edf2f7;
+  transition: ease-in-out 500ms all;
+  border-radius: 100vh;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+  border-radius: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body,
+html {
+  font-family: var(--base-font-family);
+}
+
+body {
+  font-family: var(--base-font-family);
+  overflow-x: hidden;
+}
+
+.static-tweet blockquote {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+.giscus, .giscus-frame {
+  width: 100%;
+}
+.giscus-frame {
+  border: none;
+  color-scheme: normal;
+}
+
+.static-tweet-emoji {
+  height: 1.2em !important;
+  width: 1.2em !important;
+}
+
+code {
+  font-family: var(--monospace-font-family) !important;
+}
